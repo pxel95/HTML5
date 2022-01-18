@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?cv013x');
+            src: url('fonts/icomoon.eot?cv013x#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?cv013x') format('truetype'), url('fonts/icomoon.woff?cv013x') format('woff'), url('fonts/icomoon.svg?cv013x#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        p {
+            border: 1px solid grey;
+        }
+        
+        p::after {
+            /* content: "可以换成图标字体"; */
+            /* 需要加入字体和加属性font-family */
+            content: "\ea50";
+            position: absolute;
+            right: 20px;
+            font-family: 'icomoon';
+        }
+        
+        div :first-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            this is p label
+        </p>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+        <p>
+            <ul>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </ul>
+
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- audio -->
+    <!-- 在确定支持mp3的浏览器下可以写成一行 -->
+    <!-- <audio autoplay="autoplay" src="../media/snow.mp3" controls="controls"></audio> -->
+
+    <!-- 不确定浏览器是否支持某一种时，添加两种或多种音频 -->
+    <audio controls="controls">
+        <source src="../media/fallbackring.ogg" type="audio/ogg"/>
+        <source src="../media/snow.mp3" type="audio/mpeg"/>
+    </audio>
+
+    <!-- video -->
+    <!-- 浏览器一定支持MP4时的写法 -->
+    <video autoplay="autoplay" src="../media/video.mp4" controls width="100px" height="50px"></video>
+
+    <!-- 多种格式，确保万无一失 -->
+    <video controls width="200px" height="100px">
+        <source src="../media/video.mp4" type="video/mp4"/>
+        <source src="../media/video.mp4" type="video/ogg"/>
+    </video>
+</body>
+
+</html>

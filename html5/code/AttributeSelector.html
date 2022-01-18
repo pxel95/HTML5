@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            margin: 4px 0px 0px 0px;
+            border: 1px solid pink;
+            height: 100px;
+        }
+        /* 属性选择器 */
+        /* 
+        
+        div[name] {
+            background-color: grey;
+        }
+        
+        div[name="div1"] {
+            background-color: pink;
+        }
+        
+        div[name^="div"] {
+            background-color: white;
+        } */
+        /* 伪类选择器 */
+        /* 第一个div */
+        /* div:first-child {
+            background-color: pink;
+        }
+        /* ul下的第一个div */
+        /* ul div:first-child {
+            background-color: black;
+        } */
+        /*  */
+        /* div:nth-child(2n) {
+            background-color: pink;
+        } */
+        
+        ul span:nth-of-type(1) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>111</div>
+    <ul>
+        <div name="div1"></div>
+        <span>sp1</span>
+        <div name="div2"></div>
+        <span>sp2</span>
+        <div name="div3"></div>
+        <span>sp2</span>
+        <div name="div4"></div>
+    </ul>
+
+    <ul>
+        <div name="div1"></div>
+        <div name="div2"></div>
+        <div name="div3"></div>
+        <div name="div4"></div>
+    </ul>
+
+</body>
+
+</html>
