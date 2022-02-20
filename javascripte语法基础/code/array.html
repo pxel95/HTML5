@@ -11,7 +11,14 @@
         var arr = [1, 2, 3];
         for (var i = 4; i < 10; ++i)
             arr[arr.length] = i;
+
         console.log(arr);
+        arr[arr.length + 1] = 1;
+
+        arr.push(123);
+        console.log(arr);
+
+        console.log(arr[100]);
     </script>
 </head>
 
