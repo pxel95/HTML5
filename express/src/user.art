@@ -1,0 +1,10 @@
+<ul>
+ {{each users}}
+    <li>
+        {{$value.name}}
+        {{$value.age}}
+        {{fnDouble($value.age)}}
+        {{fnTrible($value.age)}}
+    </li>
+ {{/each}}
+</ul>
